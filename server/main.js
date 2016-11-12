@@ -13,7 +13,7 @@ WebApp.connectHandlers.use("/validateToken", function(req, res, next) {
   var oriArray = new Array();
   oriArray[0] = nonce;
   oriArray[1] = timestamp;
-  oriArray[2] = "wechat-token";//这里是你在微信开发者中心页面里填的token
+  oriArray[2] = "wechattoken";//这里是你在微信开发者中心页面里填的token
   oriArray.sort();
   var original = oriArray.join('');
   console.log("Original str : " + original);
